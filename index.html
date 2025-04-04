@@ -28,6 +28,15 @@
       margin-left: auto;
       margin-right: auto;
     }
+    .banner {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+    }
+    .banner img {
+      width: 100%;
+      border-radius: 10px;
+    }
     .video-container {
       position: relative;
       padding-bottom: 56.25%;
@@ -63,15 +72,21 @@
 </head>
 <body>
   <div class="container">
+
+    <!-- Banner com imagem gerada -->
+    <div class="banner">
+      <img src="BANNER_URL_AQUI" alt="Banner: Saia da empresa sem pedir demissão">
+    </div>
+
     <h1>SAIA DA EMPRESA SEM PEDIR DEMISSÃO</h1>
     <p>Descubra como sair do seu trabalho com todos os seus direitos garantidos — sem abrir mão de nada.</p>
 
+    <!-- Vídeo YouTube -->
     <div class="video-container">
-      <!-- Substitua SEU_LINK_DO_VIDEO pelo ID do YouTube, ex: dQw4w9WgXcQ -->
       <iframe src="https://www.youtube.com/embed/SEU_LINK_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <!-- Substitua LINK_DO_CHECKOUT_KIRVANO pelo seu link de pagamento -->
+    <!-- Botão Kirvano -->
     <a href="LINK_DO_CHECKOUT_KIRVANO" target="_blank" class="btn">
       Quero Garantir Meus Direitos Agora
     </a>
