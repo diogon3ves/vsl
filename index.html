@@ -59,20 +59,22 @@
 
     .cta-button {
       position: absolute;
-      bottom: 120px;
+      bottom: 30px;
       left: 50%;
       transform: translateX(-50%);
       background-color: #f57c00;
       color: white;
-      font-size: 17px;
+      font-size: 18px;
       font-weight: bold;
-      padding: 40px 80px;
+      padding: 12px 24px;
       border: none;
       border-radius: 10px;
       cursor: pointer;
       text-decoration: none;
       animation: bounce 1.8s infinite;
       z-index: 10;
+      white-space: nowrap;
+      max-width: 90%;
     }
 
     @keyframes bounce {
@@ -95,12 +97,12 @@
     <div class="banner-container">
       <img src="banner.jpg" alt="Banner: Não peça demissão, seja demitida!">
 
-      <!-- Botão animado sobreposto -->
+      <!-- Botão clicável animado -->
       <a href="LINK_DO_CHECKOUT_KIRVANO" target="_blank" class="cta-button">
         VEJA AGORA, SE LIBERTE
       </a>
 
-      <!-- Vídeo sobre o banner -->
+      <!-- Vídeo sobreposto -->
       <div class="video-overlay">
         <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID_AQUI" allowfullscreen></iframe>
       </div>
