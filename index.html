@@ -5,26 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Saia da empresa com seus direitos</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    body {
       font-family: 'Arial', sans-serif;
-      background-color: #111;
+      background: #000; /* fundo base */
+      background-size: cover;
+      background-position: center;
       color: #fff;
+      min-height: 100vh;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      padding: 30px 15px 60px 15px;
     }
 
     .banner-container {
       position: relative;
       width: 100%;
       max-width: 768px;
-      margin: 0 auto;
     }
 
     .banner-container img {
       width: 100%;
       height: auto;
-      display: block;
       border-radius: 10px;
+      display: block;
     }
 
     .video-overlay {
@@ -47,8 +61,8 @@
     }
 
     .content {
+      margin-top: 30px;
       text-align: center;
-      padding: 30px 20px 60px 20px;
     }
 
     .btn {
@@ -70,19 +84,23 @@
 </head>
 <body>
 
-  <!-- Banner com vídeo por cima -->
-  <div class="banner-container">
-    <img src="banner.jpg" alt="Banner: Não peça demissão, seja demitida!">
-    <div class="video-overlay">
-      <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID_AQUI" allowfullscreen></iframe>
-    </div>
-  </div>
+  <div class="wrapper">
 
-  <!-- Botão abaixo do banner -->
-  <div class="content">
-    <a href="LINK_DO_CHECKOUT_KIRVANO" target="_blank" class="btn">
-      Veja agora, se liberte
-    </a>
+    <!-- Banner com vídeo por cima -->
+    <div class="banner-container">
+      <img src="banner.jpg" alt="Banner: Não peça demissão, seja demitida!">
+      <div class="video-overlay">
+        <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID_AQUI" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Botão abaixo do banner -->
+    <div class="content">
+      <a href="LINK_DO_CHECKOUT_KIRVANO" target="_blank" class="btn">
+        Veja agora, se liberte
+      </a>
+    </div>
+
   </div>
 
 </body>
