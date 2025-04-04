@@ -6,14 +6,14 @@
   <title>Saia da empresa com seus direitos</title>
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to bottom, #000000, #cfd4d9); /* degradê preto → cinza claro */
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #000000, #cfd4d9); /* Degradê preto → cinza */
       color: #fff;
       min-height: 100vh;
     }
@@ -34,14 +34,31 @@
 
     .banner-container img {
       width: 100%;
-      height: auto;
       border-radius: 10px;
       display: block;
     }
 
+    /* Botão invisível por cima do botão da imagem */
+    .clickable-button {
+      position: absolute;
+      bottom: 30px; /* ajuste vertical conforme necessário */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+      height: 60px;
+      z-index: 10;
+    }
+
+    .clickable-button a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
     .video-overlay {
       position: absolute;
-      top: 55%;
+      top: 52%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 80%;
@@ -57,46 +74,24 @@
       border: none;
       border-radius: 8px;
     }
-
-    .content {
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    .btn {
-      display: inline-block;
-      background-color: #f57c00;
-      color: white;
-      font-size: 18px;
-      padding: 14px 28px;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #e65100;
-    }
   </style>
 </head>
 <body>
 
   <div class="wrapper">
 
-    <!-- Banner com vídeo por cima -->
     <div class="banner-container">
       <img src="banner.jpg" alt="Banner: Não peça demissão, seja demitida!">
+
+      <!-- Botão clicável em cima do botão da imagem -->
+      <div class="clickable-button">
+        <a href="LINK_DO_CHECKOUT_KIRVANO" target="_blank"></a>
+      </div>
+
+      <!-- Vídeo YouTube centralizado -->
       <div class="video-overlay">
         <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID_AQUI" allowfullscreen></iframe>
       </div>
-    </div>
-
-    <!-- Botão abaixo do banner -->
-    <div class="content">
-      <a href="LINK_DO_CHECKOUT_KIRVANO" target="_blank" class="btn">
-        Veja agora, se liberte
-      </a>
     </div>
 
   </div>
