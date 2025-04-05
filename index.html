@@ -34,14 +34,16 @@
 
     .banner-container img {
       width: 100%;
-      border-radius: 10px;
       display: block;
+      border-radius: 10px;
+      /* aumenta a "altura visual" do banner com padding artificial */
+      padding-bottom: 180px;
     }
 
-    /* VIDEO */
+    /* VÍDEO */
     .video-overlay {
       position: absolute;
-      top: 64%;
+      top: 66%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 280px;
@@ -62,7 +64,7 @@
     /* BOTÃO */
     .cta-button {
       position: absolute;
-      top: 106%;
+      top: 112%;
       left: 50%;
       transform: translateX(-50%);
       background-color: #f57c00;
@@ -90,7 +92,6 @@
         transform: translateX(-50%) translateY(-5px);
       }
     }
-
   </style>
 </head>
 <body>
@@ -99,7 +100,7 @@
     <div class="banner-container">
       <img src="banner.jpg" alt="Banner: Não peça demissão, seja demitida!">
 
-      <!-- Vídeo sobreposto -->
+      <!-- VÍDEO -->
       <div class="video-overlay">
         <video autoplay muted playsinline controls>
           <source src="vsl.mp4" type="video/mp4" />
@@ -107,7 +108,7 @@
         </video>
       </div>
 
-      <!-- Botão dentro do banner -->
+      <!-- BOTÃO -->
       <a href="https://pay.kirvano.com/26aeec47-7331-46c3-8f0b-e2bb8693289c" target="_blank" class="cta-button">
         VEJA AGORA, SE LIBERTE
       </a>
