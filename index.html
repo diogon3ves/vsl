@@ -11,12 +11,16 @@
       box-sizing: border-box;
     }
 
+    html, body {
+      height: 100%;
+    }
+
     body {
       font-family: Arial, sans-serif;
       background: linear-gradient(to bottom, #000000, #cfd4d9);
-      color: #fff;
-      min-height: 100vh;
+      background-repeat: no-repeat;
       background-attachment: fixed;
+      color: #fff;
     }
 
     .wrapper {
@@ -24,7 +28,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: start;
-      padding: 30px 15px 100px 15px;
+      padding: 30px 15px 160px 15px; /* espaço inferior ampliado */
     }
 
     .banner-container {
@@ -62,7 +66,7 @@
 
     .cta-button {
       position: absolute;
-      bottom: 60px;
+      bottom: 0;
       left: 50%;
       transform: translateX(-50%);
       background-color: #f57c00;
@@ -92,11 +96,11 @@
       }
     }
 
-    /* RESPONSIVO PARA CELULAR */
+    /* MOBILE */
     @media (max-width: 480px) {
       .video-overlay {
-        width: 72%;
-        top: 68%;
+        width: 70%;
+        top: 70%;
         max-width: 200px;
         aspect-ratio: 9 / 16;
       }
@@ -104,11 +108,11 @@
       .cta-button {
         font-size: 14px;
         padding: 10px 18px;
-        bottom: -20px;
+        bottom: -40px;
       }
 
       .wrapper {
-        padding-bottom: 120px;
+        padding-bottom: 180px;
       }
     }
   </style>
@@ -120,12 +124,12 @@
     <div class="banner-container">
       <img src="banner.jpg" alt="Banner: Não peça demissão, seja demitida!">
 
-      <!-- Botão clicável animado -->
+      <!-- Botão com efeito -->
       <a href="https://pay.kirvano.com/26aeec47-7331-46c3-8f0b-e2bb8693289c" target="_blank" class="cta-button">
         VEJA AGORA, SE LIBERTE
       </a>
 
-      <!-- Vídeo sobreposto (local) -->
+      <!-- Vídeo local -->
       <div class="video-overlay">
         <video autoplay muted playsinline controls>
           <source src="vsl.mp4" type="video/mp4" />
