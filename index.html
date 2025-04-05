@@ -27,8 +27,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: start;
-      padding: 30px 15px 100px 15px;
+      justify-content: flex-start;
+      padding: 30px 15px 60px 15px;
     }
 
     .banner-container {
@@ -43,29 +43,23 @@
       display: block;
     }
 
-    .video-overlay {
-      position: absolute;
-      top: 60%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    .video-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: -100px; /* puxa o vídeo pra cima */
+    }
+
+    .video-wrapper video {
       width: 70%;
       max-width: 280px;
       aspect-ratio: 9 / 16;
-      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
       border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .video-overlay video {
-      width: 100%;
-      height: 100%;
-      border: none;
-      border-radius: 8px;
-      display: block;
     }
 
     .cta-button {
-      margin-top: 70px;
+      margin-top: 20px;
       background-color: #f57c00;
       color: white;
       font-size: 22px;
@@ -76,7 +70,6 @@
       cursor: pointer;
       text-decoration: none;
       animation: bounce 1.8s infinite;
-      z-index: 10;
       white-space: nowrap;
       max-width: 95%;
     }
@@ -93,23 +86,20 @@
       }
     }
 
-    /* MOBILE */
     @media (max-width: 480px) {
-      .video-overlay {
-        width: 70%;
-        top: 70%;
-        max-width: 200px;
-        aspect-ratio: 9 / 16;
+      .video-wrapper video {
+        width: 80%;
+        max-width: 220px;
       }
 
       .cta-button {
         font-size: 16px;
-        padding: 12px 28px;
-        margin-top: 10px;
+        padding: 14px 28px;
+        margin-top: 20px;
       }
 
       .wrapper {
-        padding-bottom: 160px;
+        padding-bottom: 80px;
       }
     }
   </style>
@@ -120,20 +110,18 @@
 
     <div class="banner-container">
       <img src="banner.jpg" alt="Banner: Não peça demissão, seja demitida!">
-
-      <!-- Vídeo sobreposto -->
-      <div class="video-overlay">
-        <video autoplay muted playsinline controls>
-          <source src="vsl.mp4" type="video/mp4" />
-          Seu navegador não suporta vídeo.
-        </video>
-      </div>
     </div>
 
-    <!-- Botão abaixo do banner -->
-    <a href="https://pay.kirvano.com/26aeec47-7331-46c3-8f0b-e2bb8693289c" target="_blank" class="cta-button">
-      VEJA AGORA, SE LIBERTE
-    </a>
+    <div class="video-wrapper">
+      <video autoplay muted playsinline controls>
+        <source src="vsl.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo.
+      </video>
+
+      <a href="https://pay.kirvano.com/26aeec47-7331-46c3-8f0b-e2bb8693289c" target="_blank" class="cta-button">
+        VEJA AGORA, SE LIBERTE
+      </a>
+    </div>
 
   </div>
 
